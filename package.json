@@ -1,0 +1,60 @@
+{
+  "name": "gamekit-utils",
+  "version": "0.0.1",
+  "description": "Minimal, fast and useful utilities for randomness, array manipulation and math — built for games, UI logic and generative design.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "game",
+    "utils",
+    "random",
+    "array",
+    "math",
+    "gamedev",
+    "typescript",
+    "logic",
+    "toolkit",
+    "helpers"
+  ],
+  "homepage": "https://github.com/leva13007/gamekit-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leva13007/gamekit-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leva13007/gamekit-utils/issues"
+  },
+  "author": "Oleh Levchenko",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/zloyleva"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.0"
+  },
+  "type": "module"
+}
