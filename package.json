@@ -2,8 +2,6 @@
   "name": "gamekit-utils",
   "version": "0.0.1",
   "description": "Minimal, fast and useful utilities for randomness, array manipulation and math — built for games, UI logic and generative design.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsc --watch",
@@ -43,6 +41,8 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
