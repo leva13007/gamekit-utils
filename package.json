@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Minimal, fast and useful utilities for randomness, array manipulation and math — built for games, UI logic and generative design.",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "rollup -c",
     "dev": "tsc --watch",
     "test": "vitest run",
     "test:watch": "vitest watch",
@@ -35,14 +35,13 @@
   "engines": {
     "node": ">=20"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -51,10 +50,14 @@
     "url": "https://buymeacoffee.com/zloyleva"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.15.29",
     "eslint": "^9.28.0",
+    "rollup": "^4.41.1",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.0"
+    "vitest": "^3.2.0",
+    "tslib": "^2.8.1"
   },
   "type": "module"
 }
