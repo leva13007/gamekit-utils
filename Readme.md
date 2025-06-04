@@ -39,15 +39,33 @@ Everything will be:
 
 ---
 
-## ⚡ Usage Example
+## ⚡ Usage Examples
+
+### 🎲 random
+
+Picks a random element from a non-empty array.
 
 ```ts
 import { random } from "gamekit-utils";
 
 const enemies = ["orc", "troll", "goblin"];
-const chosen = random(enemies);
+const chosen: string = random(enemies);
 
 console.log(chosen); // → e.g., "troll"
+```
+
+### 🔀 shuffle
+
+Returns a shuffled copy of the original array (non-mutating).
+
+```ts
+import { shuffle } from "gamekit-utils";
+
+const deck = [1, 2, 3, 4, 5];
+const shuffled: number[] = shuffle(deck);
+
+console.log(shuffled); // → e.g., [4, 1, 5, 3, 2]
+console.log(deck);     // → original remains: [1, 2, 3, 4, 5]
 ```
 
 ---
@@ -66,8 +84,8 @@ yarn add gamekit-utils
 
 | Function            | Since   | Tested | Docs | Status  |
 |---------------------|---------|--------|------|---------|
-| `random(arr)`       | 0.0.1   | ✅     | 🔜   | ✅ Done |
-| `shuffle(arr)`      | —       | ❌     | ❌   | ⏳ Planned |
+| `random(arr)`       | 0.0.1   | ✅     | ✅    | ✅ Done |
+| `shuffle(arr)`      | 0.0.5   | ✅     | ✅    | ✅ Done |
 | `pickN(arr, n)`     | —       | ❌     | ❌   | ⏳ Planned |
 | `chance(percent)`   | —       | ❌     | ❌   | ⏳ Planned |
 | `clamp(val, min, max)` | —    | ❌     | ❌   | ⏳ Planned |
