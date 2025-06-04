@@ -31,7 +31,7 @@ Everything will be:
 | Status | Function                 | Description                                |
 |--------|--------------------------|--------------------------------------------|
 | ✅     | `random(arr)`           | Pick a random element from a non-empty array |
-| ⏳     | `shuffle(arr)`          | Shuffle an array using Fisher–Yates        |
+| ✅     | `shuffle(arr)`          | Shuffle an array using Fisher–Yates        |
 | ⏳     | `pickN(arr, n)`         | Pick N unique random elements              |
 | ⏳     | `chance(percent)`       | Return true with a probability             |
 | ⏳     | `clamp(val, min, max)`  | Clamp number within bounds                 |
