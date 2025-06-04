@@ -32,7 +32,7 @@ Everything will be:
 |--------|--------------------------|--------------------------------------------|
 | ✅     | `random(arr)`           | Pick a random element from a non-empty array |
 | ✅     | `shuffle(arr)`          | Shuffle an array using Fisher–Yates        |
-| ⏳     | `pickN(arr, n)`         | Pick N unique random elements              |
+| ✅     | `pickN(arr, n)`         | Pick N unique random elements              |
 | ⏳     | `chance(percent)`       | Return true with a probability             |
 | ⏳     | `clamp(val, min, max)`  | Clamp number within bounds                 |
 | ⏳     | `lerp(a, b, t)`         | Linear interpolation                       |
@@ -68,6 +68,17 @@ console.log(shuffled); // → e.g., [4, 1, 5, 3, 2]
 console.log(deck);     // → original remains: [1, 2, 3, 4, 5]
 ```
 
+### 🎯 pickN
+
+Returns N unique random elements from the array (non-mutating).
+
+```ts
+import { pickN } from "gamekit-utils";
+
+const names = ["Alice", "Bob", "Charlie", "Dave"];
+const group = pickN(names, 2); // → e.g., ["Charlie", "Alice"]
+```
+
 ---
 
 ## 📦 Installation
@@ -86,7 +97,7 @@ yarn add gamekit-utils
 |---------------------|---------|--------|------|---------|
 | `random(arr)`       | 0.0.1   | ✅     | ✅    | ✅ Done |
 | `shuffle(arr)`      | 0.0.5   | ✅     | ✅    | ✅ Done |
-| `pickN(arr, n)`     | —       | ❌     | ❌   | ⏳ Planned |
+| `pickN(arr, n)`     | 0.0.6   | ✅     | ✅    | ✅ Done |
 | `chance(percent)`   | —       | ❌     | ❌   | ⏳ Planned |
 | `clamp(val, min, max)` | —    | ❌     | ❌   | ⏳ Planned |
 | `lerp(a, b, t)`     | —       | ❌     | ❌   | ⏳ Planned |

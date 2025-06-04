@@ -1,5 +1,13 @@
 # 📦 CHANGELOG
 
+## 0.0.6 – 2025-06-04
+### Added
+- `pickN(arr, n)` — return N unique random elements (non-mutating)
+- Unit tests for `pickN`
+- Usage example and docs for `pickN` in README
+
+---
+
 ## 0.0.5 – [2025-06-04]
 ### Added
 - `shuffle(arr)` — returns a shuffled copy of the array using Fisher–Yates
