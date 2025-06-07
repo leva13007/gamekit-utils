@@ -33,7 +33,7 @@ Everything will be:
 | ✅     | `random(arr)`           | Pick a random element from a non-empty array |
 | ✅     | `shuffle(arr)`          | Shuffle an array using Fisher–Yates        |
 | ✅     | `pickN(arr, n)`         | Pick N unique random elements              |
-| ⏳     | `chance(percent)`       | Return true with a probability             |
+| ✅     | `chance(percent)`       | Return true with a probability             |
 | ⏳     | `clamp(val, min, max)`  | Clamp number within bounds                 |
 | ⏳     | `lerp(a, b, t)`         | Linear interpolation                       |
 
@@ -79,6 +79,18 @@ const names = ["Alice", "Bob", "Charlie", "Dave"];
 const group = pickN(names, 2); // → e.g., ["Charlie", "Alice"]
 ```
 
+### 🎰 chance
+
+Returns true with a given probability (0–100%).
+
+```ts
+import { chance } from "gamekit-utils";
+
+if (chance(30)) {
+  console.log("You got lucky!"); // ~30% chance
+}
+```
+
 ---
 
 ## 📦 Installation
@@ -98,7 +110,7 @@ yarn add gamekit-utils
 | `random(arr)`       | 0.0.1   | ✅     | ✅    | ✅ Done |
 | `shuffle(arr)`      | 0.0.5   | ✅     | ✅    | ✅ Done |
 | `pickN(arr, n)`     | 0.0.6   | ✅     | ✅    | ✅ Done |
-| `chance(percent)`   | —       | ❌     | ❌   | ⏳ Planned |
+| `chance(percent)`   | 0.0.7   | ✅     | ✅    | ✅ Done |
 | `clamp(val, min, max)` | —    | ❌     | ❌   | ⏳ Planned |
 | `lerp(a, b, t)`     | —       | ❌     | ❌   | ⏳ Planned |
 

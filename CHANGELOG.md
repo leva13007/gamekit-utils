@@ -1,10 +1,14 @@
 # 📦 CHANGELOG
 
-## 0.0.6 – 2025-06-04
+## 0.0.7 – [2025-06-07]
+### Added
+- `chance(percent)` — return true with given probability (0–100)
+- Unit tests for `chance`
+
+## 0.0.6 – [2025-06-04]
 ### Added
 - `pickN(arr, n)` — return N unique random elements (non-mutating)
 - Unit tests for `pickN`
-- Usage example and docs for `pickN` in README
 
 ---
 
