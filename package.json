@@ -1,6 +1,6 @@
 {
   "name": "gamekit-utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Minimal, fast and useful utilities for randomness, array manipulation and math — built for games, UI logic and generative design.",
   "scripts": {
     "build": "rollup -c",
