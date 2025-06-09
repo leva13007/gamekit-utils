@@ -34,7 +34,7 @@ Everything will be:
 | ✅     | `shuffle(arr)`          | Shuffle an array using Fisher–Yates        |
 | ✅     | `pickN(arr, n)`         | Pick N unique random elements              |
 | ✅     | `chance(percent)`       | Return true with a probability             |
-| ⏳     | `clamp(val, min, max)`  | Clamp number within bounds                 |
+| ✅     | `clamp(val, min, max)`  | Clamp number within bounds                 |
 | ⏳     | `lerp(a, b, t)`         | Linear interpolation                       |
 
 ---
@@ -91,6 +91,17 @@ if (chance(30)) {
 }
 ```
 
+### 📉 clamp
+
+Clamps a number between min and max bounds.
+
+```ts
+import { clamp } from "gamekit-utils";
+
+const hp = clamp(player.hp, 0, 100);
+console.log(hp); // → between 0 and 100
+```
+
 ---
 
 ## 📦 Installation
@@ -107,12 +118,12 @@ yarn add gamekit-utils
 
 | Function            | Since   | Tested | Docs | Status  |
 |---------------------|---------|--------|------|---------|
-| `random(arr)`       | 0.0.1   | ✅     | ✅    | ✅ Done |
-| `shuffle(arr)`      | 0.0.5   | ✅     | ✅    | ✅ Done |
-| `pickN(arr, n)`     | 0.0.6   | ✅     | ✅    | ✅ Done |
-| `chance(percent)`   | 0.0.7   | ✅     | ✅    | ✅ Done |
-| `clamp(val, min, max)` | —    | ❌     | ❌   | ⏳ Planned |
-| `lerp(a, b, t)`     | —       | ❌     | ❌   | ⏳ Planned |
+| `random(arr)`           | 0.0.1   | ✅     | ✅    | ✅ Done |
+| `shuffle(arr)`          | 0.0.5   | ✅     | ✅    | ✅ Done |
+| `pickN(arr, n)`         | 0.0.6   | ✅     | ✅    | ✅ Done |
+| `chance(percent)`       | 0.0.7   | ✅     | ✅    | ✅ Done |
+| `clamp(val, min, max)`  | 0.0.8   | ✅     | ✅    | ✅ Done |
+| `lerp(a, b, t)`         | —       | ❌     | ❌   | ⏳ Planned |
 
 ---
 
