@@ -35,7 +35,8 @@ Everything will be:
 | ✅     | `pickN(arr, n)`         | Pick N unique random elements              |
 | ✅     | `chance(percent)`       | Return true with a probability             |
 | ✅     | `clamp(val, min, max)`  | Clamp number within bounds                 |
-| ⏳     | `lerp(a, b, t)`         | Linear interpolation                       |
+| ✅     | `lerp(a, b, t)`         | Linear interpolation                       |
+| ⏳     | `normalize(a, b, t)`    | Normalize a value to a 0-1 range          |
 
 ---
 
@@ -102,6 +103,17 @@ const hp = clamp(player.hp, 0, 100);
 console.log(hp); // → between 0 and 100
 ```
 
+### 📏 lerp
+
+Returns a value interpolated between two numbers based on a ratio.
+
+```ts
+import { lerp } from "gamekit-utils";
+
+const value = lerp(10, 20, 0.5);
+console.log(value); // → 15
+```
+
 ---
 
 ## 📦 Installation
@@ -123,7 +135,8 @@ yarn add gamekit-utils
 | `pickN(arr, n)`         | 0.0.6   | ✅     | ✅    | ✅ Done |
 | `chance(percent)`       | 0.0.7   | ✅     | ✅    | ✅ Done |
 | `clamp(val, min, max)`  | 0.0.8   | ✅     | ✅    | ✅ Done |
-| `lerp(a, b, t)`         | —       | ❌     | ❌   | ⏳ Planned |
+| `lerp(a, b, t)`         | 0.0.9   | ✅     | ✅    | ✅ Done |
+| `normalize(a, b, t)`    | —       | ❌     | ❌   | ⏳ Planned |
 
 ---
 
