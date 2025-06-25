@@ -1,5 +1,20 @@
 # 📦 CHANGELOG
 
+## 0.1.0 – [2025-06-25]
+### Added
+- `normalize(a, b, t)` — normalize a value to a 0–1 range
+- Unit tests for `normalize`
+
+## 0.0.9 – [2025-06-19]
+### Added
+- `lerp(a, b, t)` — linear interpolation between two values
+- Unit tests for `lerp`
+
+## 0.0.8 – [2025-06-10]
+### Added
+- `clamp(val, min, max)` — clamp a number within bounds
+- Unit tests for `clamp`
+
 ## 0.0.7 – [2025-06-07]
 ### Added
 - `chance(percent)` — return true with given probability (0–100)

@@ -36,7 +36,7 @@ Everything will be:
 | ✅     | `chance(percent)`       | Return true with a probability             |
 | ✅     | `clamp(val, min, max)`  | Clamp number within bounds                 |
 | ✅     | `lerp(a, b, t)`         | Linear interpolation                       |
-| ⏳     | `normalize(a, b, t)`    | Normalize a value to a 0-1 range          |
+| ✅     | `normalize(a, b, t)`    | Normalize a value to a 0-1 range          |
 
 ---
 
@@ -114,6 +114,17 @@ const value = lerp(10, 20, 0.5);
 console.log(value); // → 15
 ```
 
+### 📏 normalize
+
+Normalizes a value t from the range [a, b] to [0, 1].
+
+```ts
+import { normalize } from "gamekit-utils";
+
+const n1 = normalize(10, 20, 15); // → 0.5
+const n2 = normalize(0, 100, 25); // → 0.25
+```
+
 ---
 
 ## 📦 Installation
@@ -136,7 +147,7 @@ yarn add gamekit-utils
 | `chance(percent)`       | 0.0.7   | ✅     | ✅    | ✅ Done |
 | `clamp(val, min, max)`  | 0.0.8   | ✅     | ✅    | ✅ Done |
 | `lerp(a, b, t)`         | 0.0.9   | ✅     | ✅    | ✅ Done |
-| `normalize(a, b, t)`    | —       | ❌     | ❌   | ⏳ Planned |
+| `normalize(a, b, t)`    | 0.1.0   | ✅     | ✅    | ✅ Done |
 
 ---
 
