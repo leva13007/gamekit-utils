@@ -22,4 +22,4 @@ yarn-error.log*
 .env
 .env.*
 
-instruction.md
+ideas/

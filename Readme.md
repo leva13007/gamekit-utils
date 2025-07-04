@@ -26,7 +26,7 @@ Everything will be:
 
 ---
 
-## 🧪 Core Modules (v0.1)
+## 🧪 Core Modules
 
 | Status | Function                 | Description                                |
 |--------|--------------------------|--------------------------------------------|
@@ -37,6 +37,7 @@ Everything will be:
 | ✅     | `clamp(val, min, max)`  | Clamp number within bounds                 |
 | ✅     | `lerp(a, b, t)`         | Linear interpolation                       |
 | ✅     | `normalize(a, b, t)`    | Normalize a value to a 0-1 range          |
+| ✅     | `create2D(rows, cols, fn)` | Create a 2D array filled with a default value |
 
 ---
 
@@ -125,6 +126,23 @@ const n1 = normalize(10, 20, 15); // → 0.5
 const n2 = normalize(0, 100, 25); // → 0.25
 ```
 
+### 📐 create2D
+
+Creates a 2D array of given size, filled with a default value.
+
+```ts
+import { create2D } from "gamekit-utils";
+
+const grid = create2D(3, 4, 0);
+/*
+[
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]
+]
+*/
+```
+
 ---
 
 ## 📦 Installation
@@ -148,6 +166,7 @@ yarn add gamekit-utils
 | `clamp(val, min, max)`  | 0.0.8   | ✅     | ✅    | ✅ Done |
 | `lerp(a, b, t)`         | 0.0.9   | ✅     | ✅    | ✅ Done |
 | `normalize(a, b, t)`    | 0.1.0   | ✅     | ✅    | ✅ Done |
+| `create2D(rows, cols, fn)` | 0.1.1   | ✅     | ✅    | ✅ Done |
 
 ---
 

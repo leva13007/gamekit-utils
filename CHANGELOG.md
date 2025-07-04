@@ -1,5 +1,10 @@
 # 📦 CHANGELOG
 
+## 0.1.1 – [2025-07-04]
+### Added
+- `create2D(rows, cols, fn)` — create a 2D array filled with a default value
+- Unit tests for `create2D`
+
 ## 0.1.0 – [2025-06-25]
 ### Added
 - `normalize(a, b, t)` — normalize a value to a 0–1 range
