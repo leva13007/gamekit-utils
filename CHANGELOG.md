@@ -1,5 +1,9 @@
 # 📦 CHANGELOG
 
+## 0.1.3 – [2025-07-18]
+### Added
+- fix import path for `getNeighbors`
+
 ## 0.1.2 – [2025-07-18]
 ### Added
 - `getNeighbors(row, col, grid, diagonals?)` – returns valid neighbors around a cell in 2D grid
