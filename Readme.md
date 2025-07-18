@@ -38,6 +38,7 @@ Everything will be:
 | ✅     | `lerp(a, b, t)`         | Linear interpolation                       |
 | ✅     | `normalize(a, b, t)`    | Normalize a value to a 0-1 range          |
 | ✅     | `create2D(rows, cols, fn)` | Create a 2D array filled with a default value |
+| ✅     | `getNeighbors(row, col, grid, diagonal)` | Get neighbors of a cell in a 2D grid |
 
 ---
 
@@ -126,6 +127,8 @@ const n1 = normalize(10, 20, 15); // → 0.5
 const n2 = normalize(0, 100, 25); // → 0.25
 ```
 
+## Grid Utilities
+
 ### 📐 create2D
 
 Creates a 2D array of given size, filled with a default value.
@@ -143,7 +146,28 @@ const grid = create2D(3, 4, 0);
 */
 ```
 
----
+### 🧭 getNeighbors
+
+Returns the existing neighbors of a cell in a 2D grid.
+
+```ts
+import { getNeighbors } from "gamekit-utils";
+
+const grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+getNeighbors(1, 1, grid);
+// → [
+//   { row: 0, col: 1, value: 2 },
+//   { row: 2, col: 1, value: 8 },
+//   { row: 1, col: 0, value: 4 },
+//   { row: 1, col: 2, value: 6 }
+// ]
+```
+
 
 ## 📦 Installation
 
@@ -167,6 +191,7 @@ yarn add gamekit-utils
 | `lerp(a, b, t)`         | 0.0.9   | ✅     | ✅    | ✅ Done |
 | `normalize(a, b, t)`    | 0.1.0   | ✅     | ✅    | ✅ Done |
 | `create2D(rows, cols, fn)` | 0.1.1   | ✅     | ✅    | ✅ Done |
+| `getNeighbors(row, col, grid, diagonal)` | 0.1.2   | ✅     | ✅    | ✅ Done |
 
 ---
 

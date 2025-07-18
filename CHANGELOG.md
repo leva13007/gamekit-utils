@@ -1,5 +1,11 @@
 # 📦 CHANGELOG
 
+## 0.1.2 – [2025-07-18]
+### Added
+- `getNeighbors(row, col, grid, diagonals?)` – returns valid neighbors around a cell in 2D grid
+- Unit tests for `getNeighbors()`
+- README example
+
 ## 0.1.1 – [2025-07-04]
 ### Added
 - `create2D(rows, cols, fn)` — create a 2D array filled with a default value
